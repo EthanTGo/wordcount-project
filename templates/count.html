@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<a href="{% url 'home' %}"> start again</a>
+
+
+	<h1>count</h1>
+	<p>You inputted {{count}} many words</p>
+	{{fulltext}}
+	<br>
+	{% for word, counttotal in sorted_words %}
+
+	{{word}} - {{counttotal}}
+	<br>
+
+	{% endfor %}
+
+
+	<h1>Word Count</h1>
+	{{word_dictionary}}
+</body>
+</html>
